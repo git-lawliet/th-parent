@@ -1,12 +1,27 @@
+# Maven
+target/
+logs/
+release.properties
 *.class
-
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
-# Package Files #
 *.jar
 *.war
 *.ear
+*.iml
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# Eclipse
+.classpath
+.project
+.externalToolBuilders/
+.metadata
+
+.settings/
+.idea/
+
+# gitignore
+#.gitignore
+
+# key
+/parent/yyzc-web-boss/src/main/webapp/*.key
+/parent/designer/src/main/webapp/*.data
+
+ 
