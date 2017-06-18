@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.devMode" value="true"></constant>  <!-- 开发模式，修改立即生效，不用redeploy -->
+	<package name="home" namespace="/" extends="struts-default">
+		<default-action-ref name="index" />
+		<action name="index">
+			<result name="success">/index.jsp</result>
+		</action>
+	</package>
+
+	<package name="user" namespace="/user" extends="struts-default">
+		<action name="*" class="struts.test1.UserAction" method="{1}">
+			<result name="success">/struts/user.jsp</result>
+		</action>
+	</package>
+	<package name="admin" namespace="/admin" extends="struts-default">
+		<action name="*" class="struts.test1.AdminAction" method="{1}">
+			<result name="success">/struts/admin.jsp</result>
+		</action>
+	</package>
+</struts>	

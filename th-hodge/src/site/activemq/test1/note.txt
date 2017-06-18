@@ -1,0 +1,13 @@
+获得JMS connection factory. 通过我们提供特定环境的连接信息来构造factory。
+利用factory构造JMS connection
+启动connection
+通过connection创建JMS session.
+指定JMS destination.
+创建JMS producer或者创建JMS message并提供destination.
+创建JMS consumer或注册JMS message listener.
+发送和接收JMS message.
+关闭所有JMS资源，包括connection, session, producer, consumer等。
+
+
+Queues : 拉
+Topics ：推
